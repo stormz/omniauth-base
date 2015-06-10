@@ -2,6 +2,12 @@
 
 OmniAuth strategy for [getbase.com](http://getbase.com/).
 
+## Install
+
+Add `omniauth-base` to your gemfile.
+
+    gem 'omniauth-base', '~> 0.0.1'
+
 ## Basic Usage
 
     use OmniAuth::Builder do
