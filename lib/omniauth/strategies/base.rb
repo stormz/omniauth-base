@@ -5,7 +5,11 @@ module OmniAuth
     class Base < OmniAuth::Strategies::OAuth2
       option :name, "base"
 
-      option :client_options, {:site => "https://api.getbase.com"}
+      option :client_options, {
+               :site => "https://api.getbase.com",
+               :authorize_url => 'https://api.getbase.com/oauth2/authorize',
+               :token_url => 'https://api.getbase.com/oauth2/authorize'
+             }
 
       uid{ raw_info['id'] }
 
