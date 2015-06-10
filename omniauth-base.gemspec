@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors = ["François de Metz"]
   gem.email = ["francois@stormz.me"]
   gem.description = %q{OmniAuth strategy for Base.}
-  gem.summary = %q{Official OmniAuth strategy for Base.}
+  gem.summary = %q{OmniAuth strategy for Base.}
   gem.homepage = "https://github.com/stormz/omniauth-base"
 
   gem.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
