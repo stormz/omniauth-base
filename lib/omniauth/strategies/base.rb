@@ -8,7 +8,7 @@ module OmniAuth
       option :client_options, {
                :site => "https://api.getbase.com",
                :authorize_url => 'https://api.getbase.com/oauth2/authorize',
-               :token_url => 'https://api.getbase.com/oauth2/authorize'
+               :token_url => 'https://api.getbase.com/oauth2/token'
              }
 
       uid{ raw_info['id'] }
