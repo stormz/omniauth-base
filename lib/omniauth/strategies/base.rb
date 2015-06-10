@@ -11,12 +11,12 @@ module OmniAuth
                :token_url => 'https://api.getbase.com/oauth2/token'
              }
 
-      uid{ raw_info['id'] }
+      uid{ raw_info['data']['id'] }
 
       info do
         {
-          :name => raw_info['name'],
-          :email => raw_info['email']
+          :name => raw_info['data']['name'],
+          :email => raw_info['data']['email']
         }
       end
 
